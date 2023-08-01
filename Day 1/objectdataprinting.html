@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 : Object Data Printing</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+
+    <h2>Day 1 Learning</h2>
+    <br>
+    <script>
+        var myobj = { "Gujarat": "Gandinagar", "Maharastra": "Mumbai", "Rajasthan": "Jaipur" };
+
+        for (var i in myobj) {
+            document.write(i + "<br>");
+        }
+        document.write("<br>");
+
+        for (var i in myobj) {
+            document.write("State : " + i + " City : " + myobj[i] + "<br>");
+        }
+        document.write("<br><brs>");
+        var cases = { "Rajkot": [100, 130, 1], "Ahmedabad": [300, 330, 2], "Vapi": [10, 12, 0] };
+
+        for (var i in cases) {
+            document.write("City : " + i + " new case : " + cases[i][0]
+                + " recover case : " + cases[i][1] + " death case : " + cases[i][2] + "<br>");
+        }
+    </script>
+    <br><br><br>
+
+
+    <!-- 27-7 Day 1 Task : -->
+
+    <h2>Day 1 Task :</h2>
+    <table class="table table-striped table-success">
+        <tr class="table-dark">
+            <th>City</th>
+            <th>New Case</th>
+            <th>Recover Case</th>
+            <th>Death Case</th>
+        </tr>
+        <script>
+            for (var i in cases) {
+                document.write("<tr><td> " + i + "</td><td>" + cases[i][0] + "</td><td>"
+                    + cases[i][1] + "</td><td>" + cases[i][2] + "</td></tr>");
+            }
+
+        </script>
+    </table>
+    <br><br>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
