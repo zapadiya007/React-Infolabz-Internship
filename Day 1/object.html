@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 : Object </title>
+</head>
+
+<body>
+
+    <script>
+
+        var mydata = {};
+
+        document.write(mydata);
+        document.write("<br><br>");
+
+        var mydata2 = { "key1": "value1", "key2": "value2", "key3": 30 };
+        document.write("key2 in mydata2 : " + mydata2["key2"]);
+        document.write("<br><br>");
+
+
+        var mydata3 = { "key1": 10, "key2": [20, 100, 299, 22], "key3": 330 };
+        document.write("key3 in mydata3 : " + mydata3["key3"] + "<br><br>");
+
+        document.write("key2 in mydata3 : " + mydata3["key2"][1] + "<br><br>");
+
+        var mydata4 = {
+            "ahmedabad": [
+                {
+                    "date": "11 july 2023", "cases": 220
+                },
+                {
+                    "date": "12 july 2023", "cases": 240
+                },
+                {
+                    "date": "13 july 2023", "cases": 290
+                }],
+            "surat": [120, 209, 9],
+            "rajkot": 20
+        }
+
+        document.write(mydata4["ahmedabad"][1]["date"] + " Total cases : " + mydata4["ahmedabad"][1]["cases"]);
+
+
+
+    </script>
+
+</body>
+
+</html>
