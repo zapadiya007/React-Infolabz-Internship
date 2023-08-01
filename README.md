@@ -1,1 +1,1 @@
-# React-infolabz-internship
+# INFOLABZ Internship 
