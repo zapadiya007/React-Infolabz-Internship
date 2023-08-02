@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 : Functions </title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+<body class="m-3">
+
+    <h2>Day 2 Learning</h2>
+    <p>Intro to Functions</p>
+
+    <ul>
+        <li>Function with no argument , no return value</li>
+        <li>Function with argument , no return value</li>
+        <li>Function with no argument , but it return value</li>
+        <li>Function with argument , return value both</li>
+    </ul>
+
+    <script>
+
+
+        function one() {
+
+            document.write("Function one() : Function with no argument , no return value <br><br>");
+        }
+        one();
+
+        function two(a, b) {
+            document.write("Function two() : Function with argument , no return value <br>");
+            document.write("a : " + a + " b : " + b + "<br><br>");
+        }
+        two(23, 35);
+
+        function three() {
+            document.write("Function three() : Function with no argument , but it return value <br>");
+            return "This is Retrun Value<br><br>";
+        }
+        var x = three();
+        document.write(x);
+
+        function four(i, j) {
+            document.write("Function four() : Function with argument , return value both <br>");
+            return "Add (i and j) : " + (i + j);
+        }
+        var y = four(20, 30);
+        document.write(y);
+
+        var aone = () => {
+            document.write("<br><br>arrow function")
+        }
+        aone();
+
+    </script>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
