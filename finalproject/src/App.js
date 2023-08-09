@@ -1,12 +1,12 @@
-// import logo from './logo.svg';
-import './App.css';
+// import React, { ReactDOM } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Ashish</h1>
-    </div>
-  );
+    return (<>
+    </>
+    );
 }
 
 export default App;
