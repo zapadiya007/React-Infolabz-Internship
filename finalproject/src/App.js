@@ -4,8 +4,10 @@ import Home from './Home';
 import About from './About';
 
 function App() {
-    return (<>
-    </>
+    return (
+        <>
+            <h1>Ashish Zapadiya</h1>
+        </>
     );
 }
 
