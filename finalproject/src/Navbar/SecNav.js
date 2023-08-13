@@ -1,13 +1,13 @@
 import Nav from 'react-bootstrap/Nav';
-import Home from './Home';
+import Home from '../HomePage/Home';
 // import App from './App';
 
 
 function SecNav() {
     return (
-        <Nav variant="tabs" defaultActiveKey="/news">
+        <Nav variant="tabs" defaultActiveKey="/GitaAPI">
             <Nav.Item>
-                <Nav.Link component={Home}>Active</Nav.Link>
+                <Nav.Link href="/GitaAPI">Bhagvad Gita API</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link eventKey="link-4">Loooonger NavLink</Nav.Link>

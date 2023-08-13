@@ -5,11 +5,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function FanalNavbar() {
+function MainNavbar() {
     return (
         <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
             <Container fluid>
-                <Navbar.Brand href="#">Final Project</Navbar.Brand>
+                <Navbar.Brand href="#">JalTarang</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -50,4 +50,4 @@ function FanalNavbar() {
     );
 }
 
-export default FanalNavbar;
+export default MainNavbar;

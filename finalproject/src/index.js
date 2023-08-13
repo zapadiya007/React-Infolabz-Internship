@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Inshorts from './Inshorts';
+import Inshorts from './InshortsAPI/Inshorts';
 import App from './App';
-import Navbar from './FanalNavbar';
-import SecNav from './SecNav';
+import Navbar from './Navbar/MainNavbar';
+import SecNav from './Navbar/SecNav';
+import GitaAPI from './GitaAPI/GitaAPI';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,8 @@ root.render(
     <Navbar />
     <SecNav />
     <App />
-    <Inshorts />
+    {/* <Inshorts /> */}
+    <GitaAPI />
 
   </React.StrictMode>
 );
